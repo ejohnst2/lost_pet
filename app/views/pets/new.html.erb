@@ -1,0 +1,17 @@
+<h1>New Found Pet</h1>
+
+<%= form_for(@pet) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.label :found %>
+  <%= f.date_field :found %>
+
+  <%= f.label :species %>
+  <%= f.text_field :species %>
+
+  <%= f.submit %>
+<% end %>

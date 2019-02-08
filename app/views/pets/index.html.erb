@@ -1,0 +1,11 @@
+<h1>Lost Pets call 1-800 pets now</h1>
+<ul>
+  <% @pets.each do |pet|  %>
+    <li>
+      <h1><%= pet.name %></h1>
+      <p><%= pet.location %></p>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "I found a Pet!", new_pet_path %>
